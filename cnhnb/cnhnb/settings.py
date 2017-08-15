@@ -13,6 +13,9 @@ BOT_NAME = 'cnhnb'
 
 SPIDER_MODULES = ['cnhnb.spiders']
 NEWSPIDER_MODULE = 'cnhnb.spiders'
+ITEM_PIPELINES = {
+    'cnhnb.pipelines.MongoPipeline': 600,
+}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

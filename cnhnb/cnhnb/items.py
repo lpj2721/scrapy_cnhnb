@@ -23,11 +23,18 @@ class CategoryItem(scrapy.Item):
 
 
 class NewsItem(scrapy.Item):
+    _id = scrapy.Field()
     title = scrapy.Field()
+    subtitle = scrapy.Field()
     tag = scrapy.Field()
-    pic_d = scrapy.Field()
+    desc_pic = scrapy.Field()
     abstract = scrapy.Field()
     create_time = scrapy.Field()
-    main_body = scrapy.Field()
+    contents = scrapy.Field()
+    source = scrapy.Field()
+    pic_urls = scrapy.Field()
+    type = scrapy.Field()
+    link = scrapy.Field()
+
 
 
